@@ -1,5 +1,4 @@
 {
   "version": "1.1",
-  "filename": "okmec.js",
-  "updir": "/commands/antiraid"
+  "files": "okmec.js:/commands/antiraid",
 }
