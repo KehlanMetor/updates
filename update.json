@@ -1,4 +1,4 @@
 {
-  "version": "1.31",
-  "files": [ "userinfo.js:/commands/utilitaire" ]
+  "version": "1.32",
+  "files": [ "userinfo.js:/commands/utilitaire", "bot.js:/commands/utilitaire" ]
 }
