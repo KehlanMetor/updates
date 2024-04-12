@@ -24,10 +24,7 @@ module.exports = {
         const usinfoembed = new EmbedBuilder()
         .setTitle("ℹ️ Userinfo")
         .setThumbnail("https://cdn.discordapp.com/avatars/"+userinfo.user.id+"/"+userinfo.user.avatar+".jpeg")
-        .setDescription(`
-        🪪 Pseudo : ${userinfo.user.globalName}
-        🔗 Tag : ${userinfo.user.username} (${userinfo.user.id})
-        🤖 Bot : ${userinfo.user.bot}`)
+        .setDescription(`🪪 Pseudo : ${userinfo.user.globalName}\n🔗 Tag : ${userinfo.user.username} (${userinfo.user.id})\n🤖 Bot : ${userinfo.user.bot}`)
 
         interaction.reply({ embeds: [usinfoembed] });
     }
