@@ -21,22 +21,13 @@ module.exports = {
         if (!wl.includes(interaction.user.id)) return interaction.reply("Tu n'es pas whitelist !")
         userinfo = interaction.options.getMentionable("utilisateur")
 
-        hasnitro = ""
-
-        if(userinfo.displayAvatarURL({dynamic:true}).endsWith('.gif')) {
-            hasnitro = "✅"
-        } else {
-            hasnitro = "❌"
-        }
-
         const usinfoembed = new EmbedBuilder()
         .setTitle("ℹ️ Userinfo")
         .setThumbnail("https://cdn.discordapp.com/avatars/"+userinfo.user.id+"/"+userinfo.user.avatar+".jpeg")
         .setDescription(`
         🪪 Pseudo : ${userinfo.user.globalName}
         🔗 Tag : ${userinfo.user.username} (${userinfo.user.id})
-        🤖 Bot : ${userinfo.user.bot}
-        <a:nitro:1225110370444775618> Nitro : ${hasnitro}`)
+        🤖 Bot : ${userinfo.user.bot}`)
 
         interaction.reply({ embeds: [usinfoembed] });
     }
