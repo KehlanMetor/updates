@@ -115,9 +115,9 @@ module.exports = {
 
         embedcollect = new EmbedBuilder()
         .setTitle("help")
-        .setImage('attachment://elitebotslogo.mp4')
+        .setImage('attachment://elitebotslogo.gif')
 
-        const reply = await interaction.reply({ embeds: [embedcollect], files: ['./img/elitebotslogo.mp4'], components: [actionRow] });
+        const reply = await interaction.reply({ embeds: [embedcollect], files: ['./img/elitebotslogo.gif'], components: [actionRow] });
 
         const collector = reply.createMessageComponentCollector({
             ComponentType: ComponentType.StringSelect,
