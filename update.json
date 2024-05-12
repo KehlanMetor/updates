@@ -1,4 +1,4 @@
 {
-  "version": "1.34",
-  "files": [ "help.js:/commands/utilitaire", "elitebotslogo.gif:/img" ]
+  "version": "1.41",
+  "files": [ "antieveryone.js:/events/messageCreate" ]
 }
