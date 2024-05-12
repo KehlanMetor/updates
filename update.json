@@ -1,4 +1,4 @@
 {
-  "version": "1.41",
-  "files": [ "antieveryone.js:/events/messageCreate" ]
+  "version": "1.42",
+  "files": [ "antiban.js:/events/guildBanAdd", "bl.js:/events/guildMemberAdd" ]
 }
